@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f4">
+  <title>LinkPulse — Make every link count</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="LinkPulse home"><span class="brand-mark">↗</span> linkpulse</a>
+      <span class="status"><i></i> LINK ANALYTICS</span>
+    </header>
+
+    <section class="intro">
+      <div class="eyebrow">YOUR LINKS, IN MOTION</div>
+      <h1>Make every<br><em>link count.</em></h1>
+      <p class="lead">Shorten a link. Share it anywhere. See what happens next.</p>
+    </section>
+
+    <section class="create-card" aria-labelledby="create-heading">
+      <div class="card-heading"><div><span class="step">01</span><h2 id="create-heading">Create a short link</h2></div><span class="spark">✳</span></div>
+      <form id="link-form">
+        <label for="url">Destination URL</label>
+        <div class="input-row"><input id="url" name="url" type="url" placeholder="https://your-long-link.com/page" required><button type="submit">Shorten link <span>↗</span></button></div>
+        <p class="form-note">Paste any full URL beginning with https://</p>
+      </form>
+      <div id="result" class="result" hidden></div>
+      <div id="message" class="message" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="links-section">
+      <div class="section-heading"><div><span class="step">02</span><h2>Your links</h2></div><span id="link-count" class="count">0 LINKS</span></div>
+      <div class="table-head"><span>DESTINATION</span><span>SHORT LINK</span><span>CLICKS</span></div>
+      <div id="links-list" class="links-list"><div class="empty">Your links will show up here.</div></div>
+    </section>
+
+    <footer><span>LINKPULSE <b>·</b> BUILT TO MAKE THE INTERNET A LITTLE SHORTER</span><span>01 / 01</span></footer>
+  </main>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
